@@ -1,46 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Startup</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
 
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+
+    <title>Zoya Group | Novelty & Disposable Item Wholesaler</title>
   </head>
-  <body>
-    <div class="container d-flex align-items-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase">
-            <strong>Biggest Startup event of the year</strong>
-          </h1>
-        </header>
-        <div class="buffer col-12"></div>
-        <section class="text-center col-12">
-          <hr />
-          <a href="https://mailchi.mp/19281f4cd790/consulting-services"
-            ><button class="btn btn-primary btn-xl">Find out more</button></a
-          >
-        </section>
+  <body id="home">
+    <!-- Navbar -->
+    <div id="page-container">
+      <nav id="navbar">
+        <img
+          src="img/logos/zlogoc.svg"
+          alt="Zoya Group Logo"
+          class="shadow"
+          width="230"
+        />
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#main-footer">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Header: Showcase -->
+      <header id="showcase">
+        <div class="showcase-content text-center">
+          <h1 class="l-heading">Competitive Wholesale Supplier</h1>
+          <p class="lead">
+            A community-centric e-commerce portal that offers novelty items at
+            competitive wholesale price.
+          </p>
+          <a href="#products" class="btn">Product Listing</a>
+        </div>
+      </header>
+      <div id="content-wrap">
+        <!-- Photo Gallery -->
+
+        <div id="products" class="container">
+          <div class="g1 gallery"></div>
+          <div class="g2 gallery"></div>
+          <div class="g3 gallery"></div>
+          <div class="g4 gallery"></div>
+          <div class="g5 gallery"></div>
+          <div class="g6 gallery"></div>
+          <div class="g7 gallery"></div>
+        </div>
       </div>
+      <!-- Footer -->
+
+      <footer id="main-footer">
+        <div class="media footer-container">
+          <div class="item-contact">
+            <a href="#home">
+              <img
+                class="logo"
+                src="img/logos/z.footer.svg"
+                alt="Zoya Group LOGO"
+                width="100px"
+              />
+              <h1>Z o y a &nbsp; G r o u p</h1></a
+            >
+          </div>
+
+          <div class="item-contact">
+            <img
+              class="location-icon"
+              src="img/logos/building-solid.svg"
+              alt="building icon"
+              width="54px"
+            />
+            <section class="location">
+              <h3>Illinois</h3>
+              <p>
+                6251 N Mozart Street,<br />
+                Chicago IL -60659
+              </p>
+              <h3>Georgia</h3>
+              <p>
+                XXXX N Mozart Street,<br />
+                Atlanta GA -XXXXX
+              </p>
+            </section>
+          </div>
+
+          <div class="item-contact">
+            <i class="phone-icon fas fa-phone fa-3x"></i>
+            <section class="phone">
+              <h3>Illinois</h3>
+              <p>(718) - 440 - 2358</p>
+              <h3>Georgia</h3>
+              <p>(786) - 816 - 7561</p>
+            </section>
+          </div>
+
+          <div class="item-contact">
+            <i class="email-icon fas fa-envelope fa-3x"></i>
+            <section class="email">
+              <h3>Email Address</h3>
+              <p>shane@zoyagroup.com</p>
+              <p>shahid@zoyagroup.com</p>
+              <p>sameer@zoyagroup.com</p>
+            </section>
+          </div>
+        </div>
+        <div class="item-contact">
+          <section class="copyright">
+            <p>
+              Copyright &copy; 2020, <strong>Zoya Group</strong>, All Rights
+              Reserved
+            </p>
+          </section>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
+
+<!-- Local JS File -->
+<!-- <script src="js/main.js"></script> -->
