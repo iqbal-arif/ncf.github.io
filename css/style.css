@@ -246,11 +246,14 @@ body {
   text-decoration-style: none;
 }
 
-a[href^="tel"], .logo {
+a[href^="tel"] {
   color: inherit; 
   text-decoration: none; 
 }
 
+.item-contact a{
+  text-decoration: none; 
+}
 h1,
 .location,
 .phone,
