@@ -1,1 +1,292 @@
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  background: #333;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  text-shadow: #fc0 1px 0 10px;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  color: #325e01;
+  background-color: rgba(255, 251, 245, 0.7);
+}
+
+.btn {
+  display: inline-block;
+  color: #325e01;
+  font-size: larger;
+  font-weight: bolder;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 25px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../img/zoya.banner.png") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Photo Gallery Styling */
+
+body {
+  height: 100vh;
+
+  background: rgb(228, 227, 227);
+  overflow: auto;
+
+  max-width: 1300px;
+  margin: auto;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1300px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  grid-template-areas: "g1 g2 g2 g3" "g1 g4 g5 g3" "g6 g6 g7 g7";
+}
+.container .g1 {
+  grid-area: g1;
+  background: url("../img/charisse-kenion-dah-unsplash.jpg?raw=true");
+}
+.container .g2 {
+  grid-area: g2;
+  background: url("../img/deanna-alys-unsplash.jpg");
+}
+.container .g3 {
+  grid-area: g3;
+  background: url("../img/jeremy-alford-unsplash.jpg");
+}
+.container .g4 {
+  grid-area: g4;
+  background: url("../img/sebastian-scholz-nuki-unsplash.jpg");
+}
+.container .g5 {
+  grid-area: g5;
+  background: url("../img/sven-kucinic-unsplash.jpg");
+}
+.container .g6 {
+  grid-area: g6;
+  background: url("../img/yohan-cho-unsplash.jpg");
+}
+.container .g7 {
+  grid-area: g7;
+  background: url("../img/phaedra-botanicals-unsplash.jpg");
+}
+.container .gallery {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.container .gallery::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 53, 53, 0.8);
+  transition: 0.7s;
+}
+.container .gallery:hover::before {
+  opacity: 0;
+}
+.container .gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Footer */
+
+#main-footer #icon {
+  color: black;
+}
+.phone,
+.email {
+  padding-top: 20px;
+}
+
+h1,
+.location,
+.phone,
+.email,
+.copyright {
+  color: white;
+}
+
+.location-icon,
+.phone-icon,
+.email-icon {
+  padding: 0.65rem 0;
+  color: #93cb52;
+}
+
+.copyright {
+  background-color: rgba(37, 37, 37, 0.5);
+  height: 3.5rem;
+  padding-top: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-contact {
+  background-color: #333;
+  text-align: center;
+  flex: 1;
+}
+
+/* Media Queries */
+
+/ @media screen and (max-width: 768px) {
+  .media {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    align-self: end;
+  }
+  .item-contact {
+    border-bottom: 1px solid black;
+  }
+}
