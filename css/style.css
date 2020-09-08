@@ -243,6 +243,7 @@ body {
 .phone,
 .email {
   padding-top: 20px;
+  text-decoration-style: none;
 }
 
 h1,
