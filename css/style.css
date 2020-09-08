@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 * {
@@ -28,7 +27,8 @@ body {
   width: 100%;
   height: 2.5rem;
 }
-a {
+a,
+.phone {
   text-decoration: none;
 }
 
@@ -277,16 +277,13 @@ h1,
   flex: 1;
 }
 
-/* Media Queries */
-
-/ @media screen and (max-width: 768px) {
-  .media {
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
-    align-self: end;
-  }
-  .item-contact {
-    border-bottom: 1px solid black;
+@media (hover: none), (hover: on-demand) {
+  .container .gallery::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.8);
+    transition: 0.7s;
   }
 }

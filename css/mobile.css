@@ -31,7 +31,7 @@ body {
   }
 
   .l-heading {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-justify: center;
   }
 
@@ -54,7 +54,6 @@ body {
 
   .media {
     margin-top: 0;
-   
     flex: 1;
     flex-direction: column;
     text-align: center;
@@ -62,5 +61,23 @@ body {
   .item-contact {
     border-bottom: 1px solid black;
   }
+  .l-heading {
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1.25rem;
+  }
 }
 
+/* suppress hover effect on devices that don't support hover fully*/
+
+@media (hover: none), (hover: on-demand) {
+  .container .gallery::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.8);
+    transition: 0.7s;
+  }
+}
