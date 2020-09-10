@@ -23,6 +23,42 @@ $("#navbar a, .btn").on("click", function (event) {
   }
 });
 
+// Pop-up Modal
+
+var
+
+function showWindow() {
+  $("#main-popup").show();
+  // stop scroll
+  "html body".css("overflow", "hidden");
+
+  // auto hide
+  setTimeout(hideWindow, 5000);
+
+
+}
+//showWindow()
+function hideWindow() {
+  $("#main-popup").hide();
+  // on scroll
+  "html body".css("overflow", "scroll");
+}
+//hideWindow()
+// now call function automatically after some time
+
+// auto open after 2s
+
+setTimeout(showWindow, 2000);
+
+
+// close after click
+
+$("close-btn").click(function(){
+
+  hideWindow();
+  clearTimeout(stopAutohide);
+
+})
 // Hover on touch devices
 
 // (function () {
