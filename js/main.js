@@ -25,20 +25,20 @@ $("#navbar a, .btn").on("click", function (event) {
 
 // Hover on touch devices
 
-(function () {
-  "use strict";
+// (function () {
+//   "use strict";
 
-  if (!("addEventListener" in window)) {
-    return;
-  }
+//   if (!("addEventListener" in window)) {
+//     return;
+//   }
 
-  var htmlElement = document.querySelector(".hover-active");
+//   var htmlElement = document.querySelector(".hover-active");
 
-  function touchStart() {
-    htmlElement.classList.remove("hover-active");
+//   function touchStart() {
+//     htmlElement.classList.remove("hover-active");
 
-    htmlElement.removeEventListener("touchstart", touchStart);
-  }
+//     htmlElement.removeEventListener("touchstart", touchStart);
+//   }
 
-  htmlElement.addEventListener("touchstart", touchStart);
-})();
+//   htmlElement.addEventListener("touchstart", touchStart);
+// })();
