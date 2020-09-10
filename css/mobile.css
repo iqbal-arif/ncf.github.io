@@ -67,9 +67,8 @@ body {
   .lead {
     font-size: 1.25rem;
   }
-}
-
-/* suppress hover effect on devices that don't support hover fully*/
+  
+  /* suppress hover effect on devices that don't support hover fully*/
 
 @media (hover: none), (hover: on-demand) {
   .container .gallery::before {
@@ -81,3 +80,6 @@ body {
     transition: 0.7s;
   }
 }
+}
+
+
