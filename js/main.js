@@ -24,26 +24,27 @@ $("#navbar a, .btn").on("click", function (event) {
 });
 
 // Pop-up Modal
+$(document).ready(function(){
 
-var
+  var stopAutohide;
 
-function showWindow() {
-  $("#main-popup").show();
-  // stop scroll
-  "html body".css("overflow", "hidden");
+  function showWindow() {
+    $("#pop-up").show();
+    // stop scroll
+    $("html body").css("overflow", "hidden");
+    // auto hide after 5sec
+    stopAutohide = setTimeout(hideWindow, 5000);
+  }
 
-  // auto hide
-  setTimeout(hideWindow, 5000);
-
-
-}
-//showWindow()
-function hideWindow() {
-  $("#main-popup").hide();
-  // on scroll
-  "html body".css("overflow", "scroll");
+  //showWindow()
+  function hideWindow() {
+    $("#main-popup").hide();
+    // on scroll
+    $("html body").css("overflow", "scroll");
+    
 }
 //hideWindow()
+
 // now call function automatically after some time
 
 // auto open after 2s
@@ -53,12 +54,14 @@ setTimeout(showWindow, 2000);
 
 // close after click
 
-$("close-btn").click(function(){
+$("btn-green").click(function(){
 
   hideWindow();
   clearTimeout(stopAutohide);
-
+  
 })
+
+
 // Hover on touch devices
 
 // (function () {
