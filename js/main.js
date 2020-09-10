@@ -29,7 +29,7 @@ $(document).ready(function(){
   var stopAutohide;
 
   function showWindow() {
-    $("#pop-up").show();
+    $("#main-popup").show();
     // stop scroll
     $("html body").css("overflow", "hidden");
     // auto hide after 5sec
