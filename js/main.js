@@ -24,60 +24,60 @@ $("#navbar a, .btn").on("click", function (event) {
 });
 
 // Pop-up Modal
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  var stopAutohide;
+//   var stopAutohide;
 
-  function showWindow() {
+//   function showWindow() {
+//     $("#main-popup").show();
+//     // stop scroll
+//     $("html body").css("overflow", "hidden");
+//     // auto hide after 5sec
+//     stopAutohide = setTimeout(hideWindow, 5000);
+//   }
+
+//   //showWindow()
+//   function hideWindow() {
+//     $("#main-popup").hide();
+//     // on scroll
+//     $("html body").css("overflow", "scroll");
+
+// }
+// //hideWindow()
+
+// // now call function automatically after some time
+
+// // auto open after 2s
+
+// setTimeout(showWindow, 2000);
+
+// // close after click
+
+// $("#btn-green").click(function(){
+
+//   hideWindow();
+//   clearTimeout(stopAutohide);
+//   window.open(URL: "https://iqbal-arif.github.io/ncf.github.io/")
+
+// })
+
+// Pop-up JS with Jquery
+
+jQuery(document).ready(function ($) {
+  if (sessionStorage.getItem("advertOnce") !== "true") {
+    //sessionStorage.setItem('advertOnce','true');
     $("#main-popup").show();
-    // stop scroll
-    $("html body").css("overflow", "hidden");
-    // auto hide after 5sec
-    stopAutohide = setTimeout(hideWindow, 5000);
+  } else {
+    $("#main-popup").hide();
   }
 
-  //showWindow()
-  function hideWindow() {
+  $("#refresh-page").on("click", function () {
     $("#main-popup").hide();
-    // on scroll
-    $("html body").css("overflow", "scroll");
-    
-}
-//hideWindow()
+    sessionStorage.setItem("advertOnce", "true");
+  });
 
-// now call function automatically after some time
-
-// auto open after 2s
-
-setTimeout(showWindow, 2000);
-
-
-// close after click
-
-$("btn-green").click(function(){
-
-  hideWindow();
-  clearTimeout(stopAutohide);
-  
-})
-
-
-// Hover on touch devices
-
-// (function () {
-//   "use strict";
-
-//   if (!("addEventListener" in window)) {
-//     return;
-//   }
-
-//   var htmlElement = document.querySelector(".hover-active");
-
-//   function touchStart() {
-//     htmlElement.classList.remove("hover-active");
-
-//     htmlElement.removeEventListener("touchstart", touchStart);
-//   }
-
-//   htmlElement.addEventListener("touchstart", touchStart);
-// })();
+  $("#reset-session").on("click", function () {
+    $("#main-popup").show();
+    sessionStorage.setItem("advertOnce", "");
+  });
+});

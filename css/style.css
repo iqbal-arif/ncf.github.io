@@ -132,22 +132,109 @@ body {
   text-align: center;
   text-decoration-style: none;
 }
-#pop-up h1 {
+#popup h1 {
   color: #7ab436;
+  font-size: 2.5rem;
+  text-align: center;
 }
-#pop-up p {
-  font-size: large;
+#popup p {
+  text-align: center;
+  font-size: 1rem;
   color: #f4f4f4;
 }
+
+/* #ref-fb {
+  animation: bodynoscroll 1s 4.6s forwards;
+  font-size: 1rem;
+} */
+/* #popup-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -2;
+  opacity: 0;
+  visibility: hidden;
+  animation: mymodalcontainer 1s 2s forwards;
+} */
+/* #popup {
+  position: fixed;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 500px;
+  height: 350px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: #333;
+  border-radius: 25px; */
+/* background-color: royalblue; */
+/* visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  padding: 20px;
+  font-size: 2rem;
+  color: white;
+  animation: mymodal 1s 2s forwards;
+} */
+/* .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+} */
+/* .close:hover {
+  color: black;
+} */
+/* #ref-fb:target #popup-container {
+  display: none;
+} */
+/* #ref-fb:target {
+  overflow: scroll;
+  animation: none;
+} */
+
+/* #ref-fb:target {
+  display: none;
+} */
+/* @keyframes mymodal {
+  to {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+    z-index: 1050;
+  }
+}
+@keyframes mymodalcontainer {
+  to {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1040;
+  }
+}
+@keyframes bodynoscroll {
+  to {
+    overflow: hidden;
+  }
+} */
 
 button {
   flex-direction: row;
   flex: 1;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   margin-top: 30px;
-  padding: 10px;
+  padding: 7px;
   border-radius: 15px;
+  text-align: center;
 }
 
 #btn-red {
