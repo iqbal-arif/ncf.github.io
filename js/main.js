@@ -66,18 +66,18 @@ $("#navbar a, .btn").on("click", function (event) {
 jQuery(document).ready(function ($) {
   if (sessionStorage.getItem("advertOnce") !== "true") {
     //sessionStorage.setItem('advertOnce','true');
-    $("#main-popup").show();
+    $("#pop-up").show();
   } else {
-    $("#main-popup").hide();
+    $("#pop-up").hide();
   }
 
   $("#refresh-page").on("click", function () {
-    $("#main-popup").hide();
+    $("#pop-up").hide();
     sessionStorage.setItem("advertOnce", "true");
   });
 
   $("#reset-session").on("click", function () {
-    $("#main-popup").show();
+    $("#pop-up").show();
     sessionStorage.setItem("advertOnce", "");
   });
 });
