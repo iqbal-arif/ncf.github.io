@@ -29,7 +29,6 @@ body {
 
   .l-heading {
     font-size: 1.5rem;
-    text-justify: center;
   }
 
   .lead {
@@ -60,7 +59,7 @@ body {
 
   /* suppress hover effect on devices that don't support hover fully*/
 
-  @media (hover: none), (hover: on-demand) {
+  @media (hover: none), (any-hover: none) {
     .container .gallery::before {
       content: "";
       position: absolute;

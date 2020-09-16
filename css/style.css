@@ -208,7 +208,7 @@ div.container .gallery .overlay:hover ~ img {
   filter: none;
 }
 
-@media (hover: none), (hover: on-demand) {
+@media (hover: none), (any-hover: none) {
   .container .gallery::before {
     content: "";
     position: absolute;
@@ -233,7 +233,7 @@ div.container .gallery .overlay:hover ~ img {
 .phone,
 .email {
   padding-top: 20px;
-  text-decoration-style: none;
+  text-decoration: none;
 }
 
 a[href^="tel"] {
@@ -244,6 +244,10 @@ a[href^="tel"] {
 .item-contact a {
   text-decoration: none;
 }
+
+.item-contact .location-icon {
+  width: 54px;
+}
 h1,
 .location,
 .phone,
@@ -253,6 +257,7 @@ h1,
 }
 
 .logo {
+  width: 100px;
   margin-top: 0.65rem;
   text-decoration: none;
 }
