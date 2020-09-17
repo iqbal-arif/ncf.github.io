@@ -32,7 +32,7 @@ av_showmodal = function () {
   );
 
   // Question Content
-  var content_heading = $("<h2>Are you older than 20 years ?</h2>");
+  var content_heading = $("<h2>Are you older than 21 years ?</h2>");
   var content_buttons = $(
     '<nav><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Yes</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">No</a></li></nav>'
   );
