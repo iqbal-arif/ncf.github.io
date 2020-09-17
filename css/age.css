@@ -1,0 +1,80 @@
+/*****************************************************************************************************************************/
+/*********************************************** VERIFY AGE ******************************************************************/
+/*****************************************************************************************************************************/
+
+#modal_screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal_screen.nope {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#modal_content {
+  position: fixed;
+  z-index: 1101;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 10px solid #4d4d56;
+  width: auto;
+  max-width: 290px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  background-position: center 2em;
+  background-repeat: no-repeat;
+  background-size: 140px auto;
+  background-image: url(../z.footer.svg);
+}
+
+#modal_content .content_wrapper {
+  padding: 25px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+#modal_content h2 {
+  font-size: 1.6em;
+}
+
+#modal_content p {
+  font-size: 1.1em;
+}
+
+#modal_content div ul {
+  padding: 0;
+}
+
+#modal_content div li {
+  display: inline-flex;
+  width: 48%;
+  padding: 5px;
+}
+
+#modal_content a.button {
+  width: 100px;
+  margin: 10px auto;
+  background: #0d9dae;
+  color: #a6e1e8;
+  text-decoration: none;
+  -moz-transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -moz-transition: background 0.15s ease-in;
+  -webkit-transition: background 0.15s ease-in;
+  -o-transition: background 0.15s ease-in;
+  border-radius: 40px;
+}
+
+#modal_content a.notEligible {
+  background: #c30;
+}
+
+#modal_content a.button:hover {
+  background: #575760;
+}
